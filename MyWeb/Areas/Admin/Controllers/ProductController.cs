@@ -212,7 +212,7 @@ namespace MyWeb.Areas.Admin.Controllers
         {
             Product product = db.Products.Find(id);
             product.Status = (product.Status == 1) ? 2 : 1;
-            product.UpdateBy = 1;
+            product.UpdateBy = int.Parse(Session["UserAdmin"].ToString());
             product.UpdateAt = DateTime.Now;
             db.Entry(product).State = EntityState.Modified;
             db.SaveChanges();
@@ -224,7 +224,7 @@ namespace MyWeb.Areas.Admin.Controllers
         {
             Product product = db.Products.Find(id);
             product.Status = 0;
-            product.UpdateBy = 1;
+            product.UpdateBy = int.Parse(Session["UserAdmin"].ToString());
             product.UpdateAt = DateTime.Now;
             db.Entry(product).State = EntityState.Modified;
             db.SaveChanges();
@@ -236,7 +236,7 @@ namespace MyWeb.Areas.Admin.Controllers
         {
             Product product = db.Products.Find(id);
             product.Status = 2;
-            product.UpdateBy = 1;
+            product.UpdateBy = int.Parse(Session["UserAdmin"].ToString());
             product.UpdateAt = DateTime.Now;
             db.Entry(product).State = EntityState.Modified;
             db.SaveChanges();

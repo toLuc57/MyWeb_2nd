@@ -154,7 +154,7 @@ namespace MyWeb.Areas.Admin.Controllers
         {
             Category category = db.Categorys.Find(id);
             category.Status = (category.Status == 1) ? 2 : 1;
-            category.UpdateBy = 1;
+            category.UpdateBy = int.Parse(Session["UserAdmin"].ToString());
             category.UpdateAt = DateTime.Now;
             db.Entry(category).State = EntityState.Modified;
             db.SaveChanges();
@@ -166,7 +166,7 @@ namespace MyWeb.Areas.Admin.Controllers
         {
             Category category = db.Categorys.Find(id);
             category.Status = 0;
-            category.UpdateBy = 1;
+            category.UpdateBy = int.Parse(Session["UserAdmin"].ToString());
             category.UpdateAt = DateTime.Now;
             db.Entry(category).State = EntityState.Modified;
             db.SaveChanges();
@@ -178,7 +178,7 @@ namespace MyWeb.Areas.Admin.Controllers
         {
             Category category = db.Categorys.Find(id);
             category.Status = 2;
-            category.UpdateBy = 1;
+            category.UpdateBy = int.Parse(Session["UserAdmin"].ToString());
             category.UpdateAt = DateTime.Now;
             db.Entry(category).State = EntityState.Modified;
             db.SaveChanges();
