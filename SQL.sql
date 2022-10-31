@@ -86,10 +86,10 @@ create table [dbo].[Post] (
 	[TopicId] int,
 	[Title] nvarchar(50),
 	[Slug] nvarchar(50),
-	[Detail] nvarchar(12),
+	[Detail] nvarchar(MAX),
 	[Metakey] nvarchar(50),
 	[Metadesc] nvarchar(50),
-	[Img] nvarchar(50),
+	[Img] nvarchar(MAX),
 	[CreateBy] int,
 	[CreateAt] datetime,
 	[UpdateBy] int,
@@ -116,12 +116,11 @@ create table [dbo].[Product] (
 	[Status] int
 )
 
-
 create table [dbo].[Slider] (
 	[Id] int IDENTITY (1,1) not null primary key,
 	[Name] nvarchar(50),
-	[Link] nvarchar(50),
-	[Img] nvarchar(50),
+	[Link] nvarchar(MAX),
+	[Img] nvarchar(MAX),
 	[Orders] int,
 	[CreateBy] int,
 	[CreateAt] datetime,
@@ -144,28 +143,3 @@ create table [dbo].[Topic] (
 	[UpdateAt] datetime,	
 	[Status] int
 )
-
-drop procedure uspProductCategory
-AS 
-BEGIN
-	select [p].[Id]
-	  ,[c].[Name] AS [CatName]
-      ,[p].[Name]
-      ,[p].[Slug]
-      ,[p].[Detail]
-      ,[p].[Metakey]
-      ,[p].[Metadesc]
-      ,[p].[Img]
-      ,[p].[Number]
-      ,[p].[Price]
-      ,[p].[Pricesale]
-      ,[p].[CreateBy]
-      ,[p].[CreateAt]
-      ,[p].[UpdateBy]
-      ,[p].[UpdateAt]
-      ,[p].[Status]
-	from 
-	[dbo].[Product] as p 
-	join [dbo].[Category] as c
-	on p.CatId = c.Id
-END

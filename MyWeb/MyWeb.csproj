@@ -150,6 +150,8 @@
     <Content Include="Public\images\Product\ac21ff6be3f81d3a078b944a533ad9d0.jpg" />
     <Content Include="Public\images\Product\c7db377b177fc8e2ff75a769022dcc23.jpg" />
     <Content Include="Public\images\Product\c9da756471a110a61f4a466e96c855a6.jpg" />
+    <Content Include="Public\images\slider_1.png" />
+    <Content Include="Public\images\slider_2.png" />
     <Content Include="Public\webfonts\fa-brands-400.svg" />
     <Content Include="Public\webfonts\fa-regular-400.svg" />
     <Content Include="Public\webfonts\fa-solid-900.svg" />

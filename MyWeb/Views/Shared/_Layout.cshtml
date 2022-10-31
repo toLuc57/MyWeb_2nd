@@ -21,9 +21,8 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
-                <div class="col-md-4">
-
-                </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
     </section>
     <section class="mainmenu clearfix bg-main">
@@ -66,12 +65,42 @@
         @RenderBody()
     </section>
 
-    <section class="footer clearfix">
-
+    <section class="footer clearfix bg-footer py-4">
+        <div class="container">
+            <div class="row text-light">
+                <div class="col-md-3">
+                    <h3 class="text-uppercase">chúng tôi là ai ?</h3>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-uppercase">chính sách</h4>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-uppercase">khu bán hàng</h4>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-uppercase">hỗ trợ chung</h4>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="copyright clearfix">
-
-    </section>
+    <section class="copyright clearfix bg-footer py-2">
+        <div class="container text-light">
+            <div class="row border-top border-light py-2">
+                <div class="col-md-6 text-light">
+                    Bản quyền thuộc về Ego Creative Cung cấp bởi Sapo
+                </div>
+            </div>
+            <div class="row">
+            <ul>
+                <li>Trang chủ</li>
+                <li>Sản phẩm</li>
+                <li>Xu hướng</li>
+                <li>Trang phục</li>                
+                <li>Phụ kiện</li>
+            </ul>
+        </div>
+        </div>  
+</section>
     <script src="~/scripts/bootstrap.bundle.min.js"></script>
     @RenderSection("footer", required: false)
 </body>
