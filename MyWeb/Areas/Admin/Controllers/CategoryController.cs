@@ -148,7 +148,7 @@ namespace MyWeb.Areas.Admin.Controllers
             db.SaveChanges();
             return RedirectToAction("Trash");
         }
-
+        
         // Thay đổi trạng thái 2->1, 1-> 2
         public ActionResult Status(int id)
         {

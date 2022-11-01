@@ -27,37 +27,59 @@
     </button>
 </div>
 
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-        <div class="toast-header">
-            <img src="..." class="rounded me-2" alt="...">
-            <strong class="me-auto">Bootstrap</strong>
-            <small class="text-muted">just now</small>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+<div class="container">
+    <div class="list-service">
+        <div class="content-service">
+            <div class="service-left">
+                <img class="lazyload" width="45" height="45" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="//bizweb.dktcdn.net/100/434/926/themes/867348/assets/ser_1.png?1664441278087" alt="ego wear" />
+            </div>
+            <div class="service-right">
+                <div class="title-service">
+                    Miễn phí giao hàng
+                </div>
+                <div class="service-sumary">
+                    Miễn phí ship với đơn hàng > 498K
+                </div>
+            </div>
         </div>
-        <div class="toast-body">
-            See? Just like this.
+        <div class="content-service">
+            <div class="service-left">
+                <img class="lazyload" width="45" height="45" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="//bizweb.dktcdn.net/100/434/926/themes/867348/assets/ser_2.png?1664441278087" alt="ego wear" />
+            </div>
+            <div class="service-right">
+                <div class="title-service">
+                    Thanh toán COD
+                </div>
+                <div class="service-sumary">
+                    Thanh toán khi nhận hàng (COD)
+                </div>
+            </div>
+        </div>
+        <div class="content-service">
+            <div class="service-left">
+                <img class="lazyload" width="45" height="45" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="//bizweb.dktcdn.net/100/434/926/themes/867348/assets/ser_3.png?1664441278087" alt="ego wear" />
+            </div>
+            <div class="service-right">
+                <div class="title-service">
+                    Khách hàng VIP
+                </div>
+                <div class="service-sumary">
+                    Ưu đãi dành cho khách hàng VIP
+                </div>
+            </div>
+        </div>
+        <div class="content-service">
+            <div class="service-left">
+                <img class="lazyload" width="45" height="45" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="//bizweb.dktcdn.net/100/434/926/themes/867348/assets/ser_4.png?1664441278087" alt="ego wear" />
+            </div>
+            <div class="service-right">
+                <div class="title-service">
+                    Hỗ trợ bảo hành
+                </div>
+                <div class="service-sumary">
+                    Đổi, sửa đồ tại tất cả store
+                </div>
+            </div>
         </div>
     </div>
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-        <div class="toast-header">
-            <img src="..." class="rounded me-2" alt="...">
-            <strong class="me-auto">Bootstrap</strong>
-            <small class="text-muted">2 seconds ago</small>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-            Heads up, toasts will stack automatically
-        </div>
-    </div>   
 </div>
-
-<script>
-    const toastElList = document.querySelectorAll('.toast');
-    for(var i in toastList) {
-        setTimeout(function () {
-            var toast = new bootstrap.Toast(i, option);
-            toast.show();
-        }, 3000);
-    }
-</script>

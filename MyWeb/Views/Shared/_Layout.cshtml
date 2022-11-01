@@ -5,6 +5,7 @@
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Public/css/all.min.css" rel="stylesheet" />
     <link href="~/Public/css/_LayoutSite.css" rel="stylesheet" />
     @RenderSection("header",required : false)
 </head>
@@ -21,7 +22,10 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-2">
+                    <i class="far fa-user"></i>
+                    <p>Đăng nhập</p>
+                </div>
             </div>
         </div>
     </section>
@@ -65,11 +69,15 @@
         @RenderBody()
     </section>
 
-    <section class="footer clearfix bg-footer py-4">
+    <section class="footer clearfix bg-footer py-2">
         <div class="container">
             <div class="row text-light">
                 <div class="col-md-3">
                     <h3 class="text-uppercase">chúng tôi là ai ?</h3>
+                    <p>Copyright@2021 Công ty TNHH thời trang Ego Wear</p>
+                    <p>Ego Wear đang trong giai đoạn phát triển mạnh với nhiều mặt hàng phong phú giá cả cạnh tranh, mong muốn đem đến chất lượng tốt nhất cho khách hàng.</p>
+                    <p>Địa chỉ: 221 Chùa Bộc, Đống Đa, Hà Nội, Hà Nội</p>
+                    <p>Điện thoại: 1900 6750 - Email: support@sapo.vn</p>                    
                 </div>
                 <div class="col-md-3">
                     <h4 class="text-uppercase">chính sách</h4>
@@ -89,16 +97,7 @@
                 <div class="col-md-6 text-light">
                     Bản quyền thuộc về Ego Creative Cung cấp bởi Sapo
                 </div>
-            </div>
-            <div class="row">
-            <ul>
-                <li>Trang chủ</li>
-                <li>Sản phẩm</li>
-                <li>Xu hướng</li>
-                <li>Trang phục</li>                
-                <li>Phụ kiện</li>
-            </ul>
-        </div>
+            </div>            
         </div>  
 </section>
     <script src="~/scripts/bootstrap.bundle.min.js"></script>
