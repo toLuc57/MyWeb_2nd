@@ -9,6 +9,7 @@ using MyWeb.Library;
 
 namespace MyWeb.Areas.Admin.Controllers
 {
+    [Authorize]
     public class CategoryController : Controller
     {
         private MyWebDBContext db = new MyWebDBContext();

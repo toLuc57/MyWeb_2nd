@@ -13,18 +13,42 @@
     <section class="header clearfix">
         <div class="container py-2">
             <div class="row">
-                <div class="col-md-2 logo">
-                    <img src="~/Public/images/logo.png" alt="Logo" class="img-fluid"/>
+                <div class="col-lg-3 col-xl-3 col-md-3 col-6 logo">
+                    <a href="@Url.Action("Index","Home")">
+                        <img width="170" height="58" src="~/Public/images/logo.png" alt="Logo" class="img-fluid" />
+                    </a>
                 </div>
-                <div class="col-md-6">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                <div class="d-md-none d-block col-2 order-3"></div>
+                <div class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="theme-search-smart">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <i class="far fa-user"></i>
-                    <p>Đăng nhập</p>
+                <div class="col-lg-3 col-xl-3 col-md-3 col-6 col-account order-2 order-md-3">
+                    <ul class="group-account">
+                        <li class="col-account d-none d-lg-inline-block">
+                            <div class="icon">
+                                <i class="far fa-user"></i>
+                                <a href="#Login" title="Đăng nhập">Đăng nhập</a>
+                            </div>                         
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                                <a href="#Favor" title="Sản phẩm yêu thích">Yêu thích</a>
+                            </div>
+                        </li>
+                        <li class="cart-drop">
+                            <div class="icon">
+                                <i class="fas fa-shopping-cart"></i>
+                                <a href="#Cart" title="Giỏ hàng">Giỏ hàng</a>
+                            </div>
+                            
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -66,7 +90,9 @@
         </div>
     </section>
     <section class="maincontent clearfix">
-        @RenderBody()
+        <div class="container">
+            @RenderBody()
+        </div>
     </section>
 
     <section class="footer clearfix bg-footer py-2">

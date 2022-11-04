@@ -172,11 +172,13 @@
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\TopicController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Library\XString.cs" />
+    <Compile Include="Models\AccountViewModel.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Menu.cs" />
@@ -263,6 +265,7 @@
     <Content Include="Public\webfonts\fa-solid-900.ttf" />
     <Content Include="Public\webfonts\fa-solid-900.woff" />
     <Content Include="Public\webfonts\fa-solid-900.woff2" />
+    <Content Include="Views\Account\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -4,3 +4,53 @@
 .bg-footer{
     background-color: #24272e;
 }
+.header{
+    padding: 15px 0;
+    background: #fff;
+}
+
+.group-account{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.group-account li{
+    display: inline-block;
+    margin-left: 20px;
+}
+@media screen and (max-width: 1399px){
+    .group-account li{
+        margin-left: 10px;
+    }
+    .theme-search-smart {
+        padding-left: 30px;
+    }
+}
+li .icon {
+    position: relative;
+    display: inline-flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.section_services {
+    padding: 10px 0 0;
+    overflow: hidden;
+}
+
+.list-service {
+    display: flex;
+    padding: 15px 0;
+}
+
+.content-service {
+
+}
+
+.service-left {
+    display: inline-block;
+    width: 45px;
+}
