@@ -46,11 +46,31 @@ li .icon {
     padding: 15px 0;
 }
 
-.content-service {
-
+.content-service {    
+    margin-left:5%;
 }
 
 .service-left {
     display: inline-block;
     width: 45px;
+}
+.service-right {
+    display: inline-block;
+    margin-left: 7px;
+    float: right;
+}
+.title-service {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #323c42;
+}
+.service-sumary {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 5px;
+    color: #888888;
 }
